@@ -1,0 +1,41 @@
+// 设置侧边菜单滚动组件的样式----开始
+//#layout-scroll-bar {
+//	max-height: calc(100vh - 60px);
+//}
+
+#menu-out-scrollbar{
+	max-height: calc(100vh - 60px);
+	background-color: $bg-color1 !important;
+
+	.el-scrollbar__wrap {
+		overflow: scroll;
+		width: 108%;
+		height: calc(102vh - 60px) !important;
+	}
+}
+
+#menu-out-scrollbar{
+	.el-menu{
+		width: 216px;
+		border-right: none;
+		background-color: $bg-color1 !important;
+
+		.el-submenu {
+			.el-submenu__title:hover{
+				background-color: $menu-hover1 !important;
+			}
+			.el-menu {
+				background-color: $bg-color2 !important;
+
+				.el-menu-item {
+					background-color: $bg-color2 !important;
+					&:hover{
+						background-color: $menu-hover2 !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 设置侧边菜单滚动组件的样式----结束
